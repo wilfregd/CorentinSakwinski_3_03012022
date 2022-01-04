@@ -2,12 +2,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 body {
-  box-sizing: border-box;
   background-color: #ececec;
   font-family: "Roboto", sans-serif; }
+
+.container-principal {
+  padding: 40px 20px;
+  padding-bottom: 60px; }
+
+.titre-section {
+  margin-bottom: 30px; }
 
 header {
   background-color: #f9f9f9;
@@ -70,9 +77,8 @@ footer {
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 230px;
-  padding: 30px;
-  padding-bottom: 50px; }
+  height: 310px;
+  padding: 20px 0; }
   .explorer h2 {
     margin-bottom: 15px; }
   .explorer p {
@@ -84,23 +90,24 @@ footer {
     margin-top: 30px; }
 
 .fonctionnement {
-  background-color: #f9f9f9;
-  padding: 40px 20px;
-  padding-bottom: 60px; }
-  .fonctionnement h2 {
-    margin-bottom: 30px; }
+  background-color: #f9f9f9; }
   .fonctionnement__list {
     height: 300px; }
   .fonctionnement .card {
-    height: 70px;
+    height: 75px;
     display: flex;
     align-items: center;
     margin-left: 10px;
-    margin-top: 25px; }
+    margin-top: 25px;
+    box-shadow: 1px 4px 6px #ccc;
+    border-radius: 15px; }
     .fonctionnement .card__rowcontent {
       margin-right: 20px;
       justify-content: center;
-      margin-left: 4px; }
+      margin-left: 4px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap; }
       .fonctionnement .card__rowcontent i {
         color: #797979;
         font-size: 22px;
@@ -117,14 +124,74 @@ footer {
       background-color: #9356DC;
       border-radius: 50px; }
 
+.restaurants .titre-section {
+  margin-bottom: 0;
+  padding: 0; }
+.restaurants .card {
+  height: 225px;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 25px;
+  box-shadow: 1px 4px 6px #ccc;
+  border-radius: 15px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap; }
+  .restaurants .card__image-crop {
+    padding: 0 -10px;
+    overflow: hidden;
+    height: 75%;
+    width: 100%;
+    border-radius: 15px 15px 0 0; }
+    .restaurants .card__image-crop img {
+      position: relative;
+      width: 100%;
+      object-fit: cover;
+      bottom: 50px; }
+    .restaurants .card__image-crop .label-nouveau {
+      position: relative;
+      float: right;
+      z-index: 2;
+      margin-left: auto;
+      margin-right: 10px;
+      margin-top: 10px;
+      width: 70px;
+      height: 25px;
+      background-color: #99E2D0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 3px 3px 8px #00000031;
+      border-radius: 2px; }
+      .restaurants .card__image-crop .label-nouveau p {
+        color: #32b091;
+        font-size: 12.5px;
+        font-weight: 700; }
+  .restaurants .card__info {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 12px;
+    padding-right: 20px; }
+    .restaurants .card__info i {
+      margin-left: auto;
+      font-size: 22px; }
+  .restaurants .card:last-child {
+    margin-bottom: 5px; }
+
 .btn {
-  padding: 8.5px;
+  padding: 15px;
   width: 225px;
-  height: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 100;
   box-shadow: 1px 4px 8px #c2c2c2; }
   .btn--round {
@@ -136,13 +203,5 @@ footer {
     font-weight: 400; }
   .btn:hover {
     cursor: pointer; }
-
-.card {
-  box-shadow: 1px 4px 6px #ccc;
-  border-radius: 15px; }
-  .card__rowcontent {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap; }
 
 /*# sourceMappingURL=style.css.map */

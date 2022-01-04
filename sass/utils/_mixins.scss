@@ -1,0 +1,12 @@
+@mixin card($height){
+    @if ($height > 0)
+    {
+        height: $height;
+    }
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 25px;
+    box-shadow: 1px 4px 6px #ccc;
+    border-radius: $card-border-radius;
+}

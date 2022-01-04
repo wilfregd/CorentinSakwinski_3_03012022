@@ -3,6 +3,7 @@
 //Utils
 @import "./utils/variables";
 @import "./utils/functions";
+@import "./utils/mixins";
 
 //Base
 @import "./base/base";
@@ -17,4 +18,3 @@
 
 //Components
 @import "./components/button";
-@import "./components/card";

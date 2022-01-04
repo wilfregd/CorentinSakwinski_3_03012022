@@ -1,6 +1,4 @@
 //Position, Ville
-$marge-logo_texte: 18px;
-
 .position{
     height: 60px;
     display: flex;
@@ -29,9 +27,8 @@ $marge-logo_texte: 18px;
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 230px;
-    padding: 30px;
-    padding-bottom: 50px;
+    height: 310px;
+    padding: 20px 0;
 
     & h2{
         margin-bottom: 15px;
@@ -50,31 +47,23 @@ $marge-logo_texte: 18px;
 }
 
 //Fonctionnement
-$margin-fonctionnement_row: 20px;
 .fonctionnement{
     background-color: $fond-tertiaire;
-    padding: 40px 20px;
-    padding-bottom: 60px;
-
-    & h2{
-        margin-bottom: 30px;
-    }
 
     &__list{
         height: 300px;
     }
 
-    & .card{
-        height: 70px;
-        display: flex;
-        align-items: center;
-        margin-left: 10px;
-        margin-top: 25px;
+    .card{
+        @include card(75px);
 
         &__rowcontent{
             margin-right: $margin-fonctionnement_row;
             justify-content: center;
             margin-left: 4px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
 
             & i{
                 color: $texte-tertiaire;
@@ -96,6 +85,83 @@ $margin-fonctionnement_row: 20px;
             padding: 4px 9px;
             background-color: $couleur-primaire;
             border-radius: 50px;
+        }
+    }
+
+}
+
+//Restaurant
+.restaurants{
+
+    & .titre-section{
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    & .card{
+        @include card(225px);
+        margin-top: 20px;
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        &__image-crop{
+            padding: 0 -10px;
+            overflow: hidden;
+            height: 75%;
+            width: 100%;
+            border-radius: $card-border-radius $card-border-radius 0 0;
+
+            & img{
+                position: relative;
+                width: 100%;
+                object-fit: cover;
+                bottom: 50px;
+            }
+
+            & .label-nouveau{
+                position: relative;
+                float: right;
+                z-index: 2;
+                margin-left: auto;
+                margin-right: 10px;
+                margin-top: 10px;
+                width: 70px;
+                height: 25px;
+                background-color: $couleur-tertiaire;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 3px 3px 8px #00000031;
+                border-radius: 2px;
+
+                & p{
+                    color: darken($couleur-tertiaire, 30%);
+                    font-size: 12.5px;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        &__info{
+            box-sizing: border-box;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
+            padding: 12px;
+            padding-right: 20px;
+
+            & i{
+                margin-left: auto;
+                font-size: 22px;
+            }
+        }
+
+        &:last-child{
+            margin-bottom: 5px;
         }
     }
 }
