@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0; }
 
 body {
   box-sizing: border-box;
-  background-color: #e6e6e6; }
+  background-color: #e6e6e6;
+  font-family: "Roboto", sans-serif; }
 
 header {
   background-color: #fff;
@@ -16,5 +18,19 @@ header {
   header img {
     margin-top: 15px;
     width: 200px; }
+
+.position {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .position img {
+    width: 20px; }
+  .position p {
+    color: #444444;
+    font-size: 19px;
+    font-weight: 500;
+    margin-left: 18px;
+    margin-right: 18px; }
 
 /*# sourceMappingURL=style.css.map */
