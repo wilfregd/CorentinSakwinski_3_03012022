@@ -1,0 +1,11 @@
+{
+  "name": "p3_sakwinski_corentin",
+  "version": "1.0.0",
+  "description": "Projet 3 OpenClassrooms",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "author": "Corentin Sakwinski",
+  "license": "ISC"
+}
