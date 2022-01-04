@@ -48,3 +48,53 @@ $marge-logo_texte: 18px;
         margin-top: 30px;
     }
 }
+
+//Fonctionnement
+$margin-fonctionnement_row: 20px;
+.fonctionnement{
+    background-color: $fond-tertiaire;
+    padding: 40px 20px;
+    padding-bottom: 60px;
+
+    & h2{
+        margin-bottom: 30px;
+    }
+
+    &__list{
+        height: 300px;
+    }
+
+    & .card{
+        height: 70px;
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+        margin-top: 25px;
+
+        &__rowcontent{
+            margin-right: $margin-fonctionnement_row;
+            justify-content: center;
+            margin-left: 4px;
+
+            & img{
+                width: 20px;
+                margin-right: $margin-fonctionnement_row;
+            }
+
+            & h3{
+                font-size: 17px;
+            }
+        }
+
+        &__number{
+            display: inline;
+            position: relative;
+            left: -15px;
+            color: #fff;
+            font-size: 16px;
+            padding: 4px 9px;
+            background-color: $couleur-primaire;
+            border-radius: 50px;
+        }
+    }
+}
