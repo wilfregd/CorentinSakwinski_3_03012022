@@ -1,0 +1,13 @@
+header{
+    background-color: #fff;
+    height: 75px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    box-shadow: 0px 3px 5px #ccc;
+
+    & img{
+        margin-top: 15px;
+        width: 200px;
+    }
+}

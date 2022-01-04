@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  box-sizing: border-box;
+  background-color: #e6e6e6; }
+
+header {
+  background-color: #fff;
+  height: 75px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  box-shadow: 0px 3px 5px #ccc; }
+  header img {
+    margin-top: 15px;
+    width: 200px; }
+
+/*# sourceMappingURL=style.css.map */
