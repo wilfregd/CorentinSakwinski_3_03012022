@@ -6,13 +6,13 @@ $marge-logo_texte: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: $texte-secondaire;
 
-    & img{
-        width: 20px;
+    & i{
+        font-size: 18px;
     }
 
     & p{
-        color: $texte-secondaire;
         font-size: 19px;
         font-weight: 500;
         margin-left: $marge-logo_texte;
@@ -76,8 +76,9 @@ $margin-fonctionnement_row: 20px;
             justify-content: center;
             margin-left: 4px;
 
-            & img{
-                width: 20px;
+            & i{
+                color: $texte-tertiaire;
+                font-size: 22px;
                 margin-right: $margin-fonctionnement_row;
             }
 

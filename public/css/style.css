@@ -35,9 +35,12 @@ footer {
   .footer__container ul {
     margin-top: 15px;
     list-style: none; }
-    .footer__container ul img {
-      width: 13px;
-      margin-right: 3px; }
+    .footer__container ul i {
+      width: 20px;
+      font-size: 13px;
+      color: #fff;
+      padding: 0;
+      margin: 0; }
     .footer__container ul li {
       margin: 6px 0; }
     .footer__container ul a {
@@ -49,11 +52,11 @@ footer {
   height: 60px;
   display: flex;
   justify-content: center;
-  align-items: center; }
-  .position img {
-    width: 20px; }
+  align-items: center;
+  color: #444444; }
+  .position i {
+    font-size: 18px; }
   .position p {
-    color: #444444;
     font-size: 19px;
     font-weight: 500;
     margin-left: 18px;
@@ -98,8 +101,9 @@ footer {
       margin-right: 20px;
       justify-content: center;
       margin-left: 4px; }
-      .fonctionnement .card__rowcontent img {
-        width: 20px;
+      .fonctionnement .card__rowcontent i {
+        color: #797979;
+        font-size: 22px;
         margin-right: 20px; }
       .fonctionnement .card__rowcontent h3 {
         font-size: 17px; }
