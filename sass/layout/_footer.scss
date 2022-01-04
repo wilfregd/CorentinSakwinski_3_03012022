@@ -1,0 +1,38 @@
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #363636;
+    box-sizing: content-box;  
+}
+
+.footer__container{
+    padding: 20px;
+
+    & h4{
+        color: #fff;
+        font-weight: 100;
+        font-size: 17px;
+        font-family: $font-titre;
+    }
+
+    & ul{
+        margin-top: 15px;
+        list-style: none;
+        
+        & img{
+            width: 13px;
+            margin-right: 3px;
+        }
+
+        & li{
+            margin: 6px 0;
+        }
+
+        & a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;   
+        }
+    }
+}  
