@@ -6,7 +6,7 @@
 
 body {
   box-sizing: border-box;
-  background-color: #e6e6e6;
+  background-color: #ececec;
   font-family: "Roboto", sans-serif; }
 
 header {
@@ -60,5 +60,40 @@ footer {
     font-weight: 500;
     margin-left: 18px;
     margin-right: 18px; }
+
+.explorer {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 230px;
+  padding: 30px;
+  padding-bottom: 50px; }
+  .explorer h2 {
+    margin-bottom: 15px; }
+  .explorer p {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #444444; }
+  .explorer .btn {
+    margin-top: 30px; }
+
+.btn {
+  padding: 10px;
+  width: 225px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 100; }
+  .btn--round {
+    border-radius: 50px; }
+  .btn--purple {
+    color: #fff;
+    background: linear-gradient(#FF79DA, #9356DC); }
 
 /*# sourceMappingURL=style.css.map */

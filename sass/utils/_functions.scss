@@ -1,0 +1,4 @@
+@function darken-gradient($color, $percentage){
+    $colorB: darken($color, $percentage);
+    @return linear-gradient($color, $colorB);
+}
