@@ -1,3 +1,8 @@
+@mixin icon($color, $size){
+    color: $color;
+    font-size: $size;
+}
+
 @mixin card($height){
     @if ($height > 0)
     {
@@ -5,8 +10,21 @@
     }
     display: flex;
     align-items: center;
-    margin-left: 10px;
     margin-top: 25px;
     box-shadow: 1px 4px 6px #ccc;
     border-radius: $card-border-radius;
+}
+
+@mixin card-image($height){
+    @include card($height);
+
+    &__image-crop{
+        overflow: hidden;
+
+        & img{
+            position: relative;
+            object-fit: cover;
+            width: 100%;
+        }
+    }
 }

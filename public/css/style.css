@@ -10,7 +10,8 @@ body {
   font-family: "Roboto", sans-serif; }
 
 .container-principal {
-  padding: 40px 20px;
+  width: 100%;
+  padding: 40px 4%;
   padding-bottom: 60px; }
 
 .titre-section {
@@ -43,9 +44,9 @@ footer {
     margin-top: 15px;
     list-style: none; }
     .footer__container ul i {
-      width: 20px;
-      font-size: 13px;
       color: #fff;
+      font-size: 13px;
+      width: 20px;
       padding: 0;
       margin: 0; }
     .footer__container ul li {
@@ -62,6 +63,7 @@ footer {
   align-items: center;
   color: #444444; }
   .position i {
+    color: #444444;
     font-size: 18px; }
   .position p {
     font-size: 19px;
@@ -97,10 +99,10 @@ footer {
     height: 75px;
     display: flex;
     align-items: center;
-    margin-left: 10px;
     margin-top: 25px;
     box-shadow: 1px 4px 6px #ccc;
-    border-radius: 15px; }
+    border-radius: 15px;
+    margin-left: 10px; }
     .fonctionnement .card__rowcontent {
       margin-right: 20px;
       justify-content: center;
@@ -131,7 +133,6 @@ footer {
   height: 225px;
   display: flex;
   align-items: center;
-  margin-left: 10px;
   margin-top: 25px;
   box-shadow: 1px 4px 6px #ccc;
   border-radius: 15px;
@@ -141,17 +142,21 @@ footer {
   flex-direction: column;
   flex-wrap: nowrap; }
   .restaurants .card__image-crop {
+    overflow: hidden; }
+    .restaurants .card__image-crop img {
+      position: relative;
+      object-fit: cover;
+      width: 100%; }
+  .restaurants .card__image-crop {
     padding: 0 -10px;
-    overflow: hidden;
     height: 75%;
     width: 100%;
     border-radius: 15px 15px 0 0; }
     .restaurants .card__image-crop img {
-      position: relative;
-      width: 100%;
-      object-fit: cover;
       bottom: 50px; }
-    .restaurants .card__image-crop .label-nouveau {
+    .restaurants .card__image-crop .image--haute {
+      bottom: 200px; }
+    .restaurants .card__image-crop .label--nouveau {
       position: relative;
       float: right;
       z-index: 2;
@@ -166,7 +171,7 @@ footer {
       justify-content: center;
       box-shadow: 3px 3px 8px #00000031;
       border-radius: 2px; }
-      .restaurants .card__image-crop .label-nouveau p {
+      .restaurants .card__image-crop .label--nouveau p {
         color: #32b091;
         font-size: 12.5px;
         font-weight: 700; }
@@ -180,8 +185,14 @@ footer {
     padding: 12px;
     padding-right: 20px; }
     .restaurants .card__info i {
-      margin-left: auto;
-      font-size: 22px; }
+      color: #000;
+      font-size: 22px;
+      margin-left: auto; }
+    .restaurants .card__info h4 {
+      margin-bottom: 3px; }
+    .restaurants .card__info p {
+      font-size: 14px;
+      font-weight: 300; }
   .restaurants .card:last-child {
     margin-bottom: 5px; }
 
@@ -203,5 +214,10 @@ footer {
     font-weight: 400; }
   .btn:hover {
     cursor: pointer; }
+
+.icon--purple {
+  background: -webkit-linear-gradient(#9356DC, #ff60d3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
 
 /*# sourceMappingURL=style.css.map */

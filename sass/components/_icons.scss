@@ -1,0 +1,7 @@
+.icon{
+    &--purple{
+        background: -webkit-linear-gradient($couleur-primaire, darken($couleur-secondaire, 5%));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
