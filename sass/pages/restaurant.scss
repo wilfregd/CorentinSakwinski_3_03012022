@@ -2,7 +2,7 @@
     position: absolute;
     left: 20px;
     top: 25px;
-    font-size: 25px;
+    font-size: 23px;
     color: $texte-secondaire;
 }
 
@@ -27,7 +27,7 @@
         width: 100%;
         border-radius: 50px 50px 0 0;
         position: absolute;
-        background-color: $fond-tertiaire;      
+        background-color: $fond-secondaire;      
         height: 75px;
         bottom: -2px;
     }
@@ -38,7 +38,7 @@
         flex-direction: row;
         flex-wrap: nowrap;
         align-items: center;
-        padding: 10px 20px;
+        padding: 10px $marge-bordure-hor;
         position: absolute;
         bottom: -10px;
         font-size: 20px;
@@ -52,7 +52,49 @@
 }
 
 .menu{
-    background: $fond-tertiaire;
+    background: $fond-secondaire;
     width: 100%;
-    height: 1000px;
+    padding: 40px $marge-bordure-hor;
+    text-transform: uppercase;
+    font-weight: 0;
+    font-size: 17px;
+
+    &__title{
+        color: $texte-tertiaire;
+        padding-bottom: 10px;
+        
+        &::before{
+            content : "";
+            position: absolute;
+            left    : 0;
+            top: 25px;
+            height  : 1px;
+            width   : 40px;
+            border-bottom:3px solid $couleur-tertiaire;
+        }
+    }
+
+    &__card-block{
+        position: relative;
+        margin-top: 50px;
+        & .card{
+            @include card(70px);
+            box-shadow: 2px 2px 8px #6969692c;
+            margin: 15px 0;
+            background-color: #fff;
+        }
+
+        &:nth-child(1){
+        margin-top: 0px;
+        }
+    }
+
+    & .btn{
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 170px;
+        text-transform: none;
+        font-size: 13px;
+    }
 }
