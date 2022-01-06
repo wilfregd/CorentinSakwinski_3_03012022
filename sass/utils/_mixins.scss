@@ -10,21 +10,8 @@
     }
     display: flex;
     align-items: center;
+    flex-wrap: nowrap;
     margin-top: 25px;
     box-shadow: 1px 4px 6px #ccc;
     border-radius: $card-border-radius;
-}
-
-@mixin card-image($height){
-    @include card($height);
-
-    &__image-crop{
-        overflow: hidden;
-
-        & img{
-            position: relative;
-            object-fit: cover;
-            width: 100%;
-        }
-    }
 }
