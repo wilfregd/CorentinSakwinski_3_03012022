@@ -203,7 +203,8 @@ footer {
   position: absolute;
   left: 20px;
   top: 25px;
-  font-size: 25px; }
+  font-size: 25px;
+  color: #444444; }
 
 .miniature {
   width: 100%;
