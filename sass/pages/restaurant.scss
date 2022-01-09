@@ -77,15 +77,17 @@
     &__card-block{
         position: relative;
         margin-top: 50px;
-        & .card{
-            @include card(70px);
-            box-shadow: 2px 2px 8px #6969692c;
-            margin: 15px 0;
-            background-color: #fff;
-        }
 
         &:nth-child(1){
         margin-top: 0px;
+        }
+    }
+
+    &__card-container .card{
+        @for $i from 1 to 4{
+            &:nth-child(#{$i}) {
+                animation: fadeIn ease 1s $i * 0.1s forwards;
+            }
         }
     }
 
@@ -96,5 +98,100 @@
         width: 170px;
         text-transform: none;
         font-size: 13px;
+    }
+}
+
+.menu .card{
+    @include card(70px);
+    box-shadow: 2px 2px 8px #6969692c;
+    margin: 15px 0;
+    background-color: #fff;
+    overflow: hidden;
+
+    opacity: 0;
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    &__gauche{
+        padding: 12px;
+        flex-grow: 1;
+        width: 50%;
+        align-self: center;
+
+        & p{
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            font-size: 0.6em;
+        }
+
+        & h4{
+            font-size: 0.8em;
+        }
+    }
+
+    &__prix{
+        flex-grow: .5;
+        height: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+
+        & h4{
+            font-size: .7em;
+            margin-top: 30px;
+        }
+    }
+
+    &__droite{
+        position: relative;
+        background-color: $couleur-tertiaire;
+        flex-grow: 0;
+        overflow: hidden;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        transition: all 500ms;
+
+        & i{
+            position: absolute;
+            color: #fff;
+            font-size: 1.2em;
+        }
+    }
+
+    &:hover > .card__droite{
+        flex-grow: 0.8;
+    }
+
+    &:hover > .card__droite i{
+        animation: rotateCheckBoxIn linear 300ms;
+    }
+}
+
+@keyframes fadeIn {
+    0%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes rotateCheckBoxIn {
+    0%{
+        transform: rotate(-180deg);
+    }
+    100%{
+        transform: rotate(0deg);
     }
 }

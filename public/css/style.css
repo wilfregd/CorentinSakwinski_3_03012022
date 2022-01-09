@@ -261,19 +261,14 @@ footer {
   .menu__card-block {
     position: relative;
     margin-top: 50px; }
-    .menu__card-block .card {
-      height: 70px;
-      display: flex;
-      align-items: center;
-      flex-wrap: nowrap;
-      margin-top: 25px;
-      box-shadow: 1px 4px 6px #ccc;
-      border-radius: 15px;
-      box-shadow: 2px 2px 8px #6969692c;
-      margin: 15px 0;
-      background-color: #fff; }
     .menu__card-block:nth-child(1) {
       margin-top: 0px; }
+  .menu__card-container .card:nth-child(1) {
+    animation: fadeIn ease 1s 0.1s forwards; }
+  .menu__card-container .card:nth-child(2) {
+    animation: fadeIn ease 1s 0.2s forwards; }
+  .menu__card-container .card:nth-child(3) {
+    animation: fadeIn ease 1s 0.3s forwards; }
   .menu .btn {
     margin: auto;
     margin-top: 50px;
@@ -282,6 +277,76 @@ footer {
     text-transform: none;
     font-size: 13px; }
 
+.menu .card {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-top: 25px;
+  box-shadow: 1px 4px 6px #ccc;
+  border-radius: 15px;
+  box-shadow: 2px 2px 8px #6969692c;
+  margin: 15px 0;
+  background-color: #fff;
+  overflow: hidden;
+  opacity: 0;
+  flex-direction: row;
+  flex-wrap: nowrap; }
+  .menu .card__gauche {
+    padding: 12px;
+    flex-grow: 1;
+    width: 50%;
+    align-self: center; }
+    .menu .card__gauche p {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      font-size: 0.6em; }
+    .menu .card__gauche h4 {
+      font-size: 0.8em; }
+  .menu .card__prix {
+    flex-grow: .5;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center; }
+    .menu .card__prix h4 {
+      font-size: .7em;
+      margin-top: 30px; }
+  .menu .card__droite {
+    position: relative;
+    background-color: #99E2D0;
+    flex-grow: 0;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 500ms; }
+    .menu .card__droite i {
+      position: absolute;
+      color: #fff;
+      font-size: 1.2em; }
+  .menu .card:hover > .card__droite {
+    flex-grow: 0.8; }
+  .menu .card:hover > .card__droite i {
+    animation: rotateCheckBoxIn linear 300ms; }
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(50px);
+    opacity: 0; }
+  100% {
+    transform: translate(0px);
+    opacity: 1; } }
+@keyframes rotateCheckBoxIn {
+  0% {
+    transform: rotate(-180deg); }
+  100% {
+    transform: rotate(0deg); } }
 .btn {
   padding: 15px;
   width: 225px;
