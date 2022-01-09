@@ -269,6 +269,8 @@ footer {
     animation: fadeIn ease 1s 0.2s forwards; }
   .menu__card-container .card:nth-child(3) {
     animation: fadeIn ease 1s 0.3s forwards; }
+  .menu__card-container .card:nth-child(4) {
+    animation: fadeIn ease 1s 0.4s forwards; }
   .menu .btn {
     margin: auto;
     margin-top: 50px;
@@ -278,7 +280,7 @@ footer {
     font-size: 13px; }
 
 .menu .card {
-  height: 70px;
+  height: 60px;
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
@@ -289,6 +291,7 @@ footer {
   margin: 15px 0;
   background-color: #fff;
   overflow: hidden;
+  text-transform: none;
   opacity: 0;
   flex-direction: row;
   flex-wrap: nowrap; }
@@ -297,24 +300,31 @@ footer {
     flex-grow: 1;
     width: 50%;
     align-self: center; }
+    .menu .card__gauche h4 {
+      font-size: 1em;
+      white-space: nowrap; }
     .menu .card__gauche p {
+      margin-top: 3px;
       text-overflow: ellipsis;
       white-space: nowrap;
       overflow: hidden;
-      font-size: 0.6em; }
-    .menu .card__gauche h4 {
-      font-size: 0.8em; }
+      font-size: 0.76em;
+      font-weight: 300; }
   .menu .card__prix {
-    flex-grow: .5;
+    flex-grow: .2;
+    width: 20px;
     height: 100%;
+    margin-right: 10px;
     padding: 10px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    color: #444444; }
     .menu .card__prix h4 {
-      font-size: .7em;
+      font-size: 0.8em;
       margin-top: 30px; }
   .menu .card__droite {
     position: relative;
