@@ -100,6 +100,7 @@
 
     & .card{
         @include card(225px);
+        user-select: none;
         text-decoration: none;
         color: #000;
         margin-top: 20px;

@@ -83,10 +83,14 @@
         }
     }
 
-    &__card-container .card{
-        @for $i from 1 to $nombre-plats-max + 1{ //+1 pour décalage index
-            &:nth-child(#{$i}) {
-                animation: fadeIn ease 1s $i * 0.1s forwards;
+    &__card-container {
+        user-select: none;
+    
+        & .card{
+            @for $i from 1 to $nombre-plats-max + 1{ //+1 pour décalage index
+                &:nth-child(#{$i}) {
+                    animation: fadeIn ease 1s $i * 0.1s forwards;
+                }
             }
         }
     }
