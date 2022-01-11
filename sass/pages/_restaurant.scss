@@ -60,6 +60,7 @@
     font-size: 17px;
 
     &__titre{
+        user-select: none;
         color: $texte-tertiaire;
         padding-bottom: 10px;
         
