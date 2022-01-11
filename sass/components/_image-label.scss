@@ -1,0 +1,21 @@
+.image-label{
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 70px;
+    height: 25px;
+    background-color: $couleur-tertiaire;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 8px #00000031;
+    border-radius: 2px;
+    
+    & p{
+        color: darken($couleur-tertiaire, 40%);
+        font-size: 12.5px;
+        font-weight: 700;
+    }
+}

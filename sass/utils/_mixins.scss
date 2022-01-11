@@ -3,11 +3,7 @@
     font-size: $size;
 }
 
-@mixin card($height){
-    @if ($height > 0)
-    {
-        height: $height;
-    }
+@mixin card{
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
