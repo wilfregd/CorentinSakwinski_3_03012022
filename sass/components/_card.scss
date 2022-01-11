@@ -1,0 +1,199 @@
+/* Défaut */
+.card{
+    @include card;
+}
+
+/* Index */
+.card-fonctionnement{
+    @include card;
+
+    &__rowcontent{
+        margin-right: $margin-fonctionnement_row;
+        justify-content: center;
+        margin-left: 4px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        & i{
+            @include icon($texte-tertiaire, 22px);
+            margin-right: $margin-fonctionnement_row;
+        }
+
+        & h3{
+            font-size: 17px;
+        }
+    }
+
+    &__number{
+        display: inline;
+        position: relative;
+        left: -15px;
+        color: #fff;
+        font-size: 16px;
+        padding: 4px 9px;
+        background-color: $couleur-primaire;
+        border-radius: 50px;
+    }
+}
+
+/* Crop */
+.card-image{
+    @include card;
+    user-select: none;
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+    &__crop{
+        width: 100%;
+        height: 75%;
+        border-radius: $card-border-radius $card-border-radius 0 0;
+        position: relative;
+        overflow: hidden;
+        box-sizing: border-box;
+
+        & img{
+            object-fit: cover;
+            position: absolute;
+            width: 100%;
+            height: 220px;
+            bottom: 0px;
+        }
+
+        & .image--haute{
+            max-height: 220px;
+        }
+    }
+
+    &__info{
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        padding: 12px;
+        padding-right: 20px;
+
+        & i{
+            @include icon(#000, 22px);
+            margin-left: auto;
+        }
+
+        & h4{
+            margin-bottom: 3px;
+        }
+
+        & p{
+            font-size: 14px;
+            font-weight: 300;
+        }
+    }
+
+    &:last-child{
+        margin-bottom: 5px;
+    }
+}
+
+/* Animé */
+.card-menu{
+    @include card;
+    opacity: 0;
+
+    overflow: hidden;
+    text-transform: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    &__gauche{
+        padding: 12px;
+        flex-grow: 1;
+        width: 50%;
+        align-self: center;
+
+        & h4{
+            font-size: 1em;
+            white-space: nowrap;
+        }
+
+        & p{
+            margin-top: 3px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            font-size: 0.76em;
+            font-weight: 300;
+        }
+    }
+
+    &__prix{
+        flex-grow: .2;
+        width: 20px;
+        height: 100%;
+        margin-right: 10px;
+        padding: 10px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        color: $texte-secondaire;
+
+        & h4{
+            font-size: 0.8em;
+            margin-top: 30px;
+        }
+    }
+
+    &__droite{
+        position: relative;
+        background-color: $couleur-tertiaire;
+        flex-grow: 0;
+        overflow: hidden;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        transition: all 500ms;
+
+        & i{
+            position: absolute;
+            color: #fff;
+            font-size: 1.2em;
+        }
+    }
+
+    &:hover > .card-menu__droite{
+        flex-grow: 0.5;
+    }
+
+    &:hover > .card-menu__droite i{
+        animation: rotateCheckBoxIn linear 300ms;
+    }
+}
+
+@keyframes fadeIn {
+    0%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes rotateCheckBoxIn {
+    0%{
+        transform: rotate(-180deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
