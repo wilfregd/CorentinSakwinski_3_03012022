@@ -6,6 +6,7 @@
 /* Index */
 .card-fonctionnement{
     @include card;
+    user-select: none;
 
     &__rowcontent{
         margin-right: $margin-fonctionnement_row;
@@ -16,7 +17,7 @@
         flex-wrap: nowrap;
 
         & i{
-            @include icon($texte-tertiaire, 22px);
+            @include icon($texte-tertiaire, 1.2em);
             margin-right: $margin-fonctionnement_row;
         }
 
@@ -34,6 +35,14 @@
         padding: 4px 9px;
         background-color: $couleur-primaire;
         border-radius: 50px;
+    }
+
+    &:hover{
+        background-color: lighten($couleur-primaire, 36%);
+
+        & i{
+            color: $couleur-primaire;
+        }
     }
 }
 
