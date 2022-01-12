@@ -1,150 +1,141 @@
-h2{
-    user-select: none;
-}
-
-.page__content{
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    visibility: hidden;
-
-    animation: displayPage 400ms ease forwards $spinner-duration;
-}
-
-.spinner{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 10px solid transparent;
-    border-top-color: $couleur-secondaire;
-    border-right-color: $couleur-secondaire;
-    position: fixed;
-    top: calc(50% - 50px);
-    right: calc(50% - 50px);
-    animation: spinnerRotation 1s linear infinite,
-    hideSpinner 400ms linear forwards $spinner-duration;
-}
-
-@keyframes spinnerRotation {
-    0%{
-        transform: rotate(0deg);
+@media screen and (max-width: $break-tablette){
+    h2{
+        user-select: none;
     }
 
-    100%{
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes displayPage {
-    0%{
+    .page__content{
+        width: 100%;
+        height: 100%;
         opacity: 0;
         visibility: hidden;
+
+        animation: displayPage 400ms ease forwards $spinner-duration;
     }
 
-    100%{
-        opacity: 1;
-        visibility: visible;
-    }
-}
-
-@keyframes hideSpinner {
-    0%{
-        opacity: 1;
-    }
-
-    100%{
-        opacity: 0;
-    }
-}
-
-//Position, Ville
-.position{
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $texte-secondaire;
-
-    & i{
-        @include icon($texte-secondaire, 18px);
+    .spinner{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 10px solid transparent;
+        border-top-color: $couleur-secondaire;
+        border-right-color: $couleur-secondaire;
+        position: fixed;
+        top: calc(50% - 50px);
+        right: calc(50% - 50px);
+        animation: spinnerRotation 1s linear infinite,
+        hideSpinner 400ms linear forwards $spinner-duration;
     }
 
-    & p{
-        font-size: 19px;
-        font-weight: 500;
-        margin-left: $marge-logo_texte;
-        margin-right: $marge-logo_texte;
-    }
-}
+    @keyframes spinnerRotation {
+        0%{
+            transform: rotate(0deg);
+        }
 
-//Explorer/Découvrez
-.explorer{
-    background-color: $fond-secondaire;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 310px;
-    padding: 20px 0;
-
-    & h2{
-        margin-bottom: 15px;
+        100%{
+            transform: rotate(360deg);
+        }
     }
 
-    & p{
-        font-size: 18px;
-        margin: 5px 0;
+    @keyframes displayPage {
+        0%{
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        100%{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    @keyframes hideSpinner {
+        0%{
+            opacity: 1;
+        }
+
+        100%{
+            opacity: 0;
+        }
+    }
+
+    //Position, Ville
+    .position{
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         color: $texte-secondaire;
-        font-weight: 300;
+
+        & i{
+            @include icon($texte-secondaire, 18px);
+        }
+
+        & p{
+            font-size: 19px;
+            font-weight: 500;
+            margin-left: $marge-logo_texte;
+            margin-right: $marge-logo_texte;
+        }
     }
 
-    & .btn{
-        margin-top: 30px;
+    //Explorer/Découvrez
+    .explorer{
+        background-color: $fond-secondaire;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 310px;
+        padding: 20px 0;
+
+        & h2{
+            margin-bottom: 15px;
+        }
+
+        & p{
+            font-size: 18px;
+            margin: 5px 0;
+            color: $texte-secondaire;
+            font-weight: 300;
+        }
+
+        & .btn{
+            margin-top: 30px;
+        }
+    }
+
+    //Fonctionnement
+    .fonctionnement{
+        background-color: $fond-tertiaire;
+
+        &__list{
+            height: 300px;
+        }
+
+        .card-fonctionnement{
+            height: 75px;
+            margin-left: calc(#{$marge-bordure-hor} - 10px);
+        }
+    }
+
+    //Restaurant
+    .restaurants{
+        & .card-image{
+            height: 225px;
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
     }
 }
 
-//Fonctionnement
-.fonctionnement{
-    background-color: $fond-tertiaire;
+/* ------------------------------ */
 
-    &__list{
-        height: 300px;
-    }
+/* ---------- TABLETTE ---------- */
 
-    .card-fonctionnement{
-        height: 75px;
-        margin-left: calc(#{$marge-bordure-hor} - 10px);
-    }
-}
+/* ------------------------------ */
 
-//Restaurant
-$animation-speed: 200ms;
-.restaurants{
-    & .card-image{
-        height: 225px;
-        margin-top: 20px;
-        margin-bottom: 15px;
-    }
-}
+@media screen and (min-width: $break-tablette) and (max-width: $break-desktop){
 
-@keyframes heartFill {
-    0%{
-        height: 0%;
-    }
-
-    100%{
-        height: 100%;
-    }
-}
-
-@keyframes heartEmpty {
-    0%{
-        height: 100%;
-    }
-
-    100%{
-        height: 0%;
-    }
 }

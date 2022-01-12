@@ -4,7 +4,7 @@
     bottom: 4%;
     right: 3%;
 
-    transition: color calc(#{$animation-speed} * 2);
+    transition: color calc(#{$heart-speed} * 2);
 
     &:hover{
         color: #fff;
@@ -23,11 +23,11 @@
         animation-timing-function: linear;
 
         &:hover{
-            animation-name: heartFill $animation-speed;
+            animation-name: heartFill $heart-speed;
         }
 
         &:not(:hover){
-            animation: heartEmpty $animation-speed;
+            animation: heartEmpty $heart-speed;
         }
     }
 
@@ -44,5 +44,25 @@
     &:hover > .heart__fill-container{
         animation: heartFill linear 300ms forwards;
         animation-direction: normal;
+    }
+}
+
+@keyframes heartFill {
+    0%{
+        height: 0%;
+    }
+
+    100%{
+        height: 100%;
+    }
+}
+
+@keyframes heartEmpty {
+    0%{
+        height: 100%;
+    }
+
+    100%{
+        height: 0%;
     }
 }

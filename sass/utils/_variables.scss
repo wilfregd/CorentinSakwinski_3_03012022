@@ -1,3 +1,7 @@
+//Vues
+$break-tablette: 730px;
+$break-desktop: 1280px;
+
 //Couleurs
 $couleur-primaire: #9356DC;
 $couleur-secondaire: #FF79DA;
@@ -16,6 +20,7 @@ $font-titre: 'Shrikhand', cursive;
 
 //Components
 $card-border-radius: 15px;
+$heart-speed: 200ms;
 
 //Index
 $marge-logo_texte: 18px;
