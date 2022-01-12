@@ -35,4 +35,21 @@ footer{
             font-size: 15px;   
         }
     }
-}  
+}
+
+@media screen and (min-width: $break-tablette) and (max-width: $break-desktop){
+    .footer__container{
+        padding: 20px 50px;
+    }
+}
+
+@media screen and (min-width: $break-desktop){
+
+    .footer__container{
+        & ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+}

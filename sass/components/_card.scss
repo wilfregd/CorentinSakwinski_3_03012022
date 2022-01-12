@@ -7,6 +7,7 @@
 .card-fonctionnement{
     @include card;
     user-select: none;
+    position: relative;
 
     &__rowcontent{
         margin-right: $margin-fonctionnement_row;
@@ -15,6 +16,7 @@
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
+        padding-left: 25px;
 
         & i{
             @include icon($texte-tertiaire, 1.2em);
@@ -28,7 +30,7 @@
 
     &__number{
         display: inline;
-        position: relative;
+        position: absolute;
         left: -15px;
         color: #fff;
         font-size: 16px;
@@ -205,5 +207,31 @@
     }
     100%{
         transform: rotate(0deg);
+    }
+}
+
+@media screen and (min-width: $break-tablette) and (max-width: $break-desktop){    
+    .card-fonctionnement{
+        margin-left: calc(#{$marge-bordure-hor} - 10px);         
+            
+            & h3{
+                font-size: 1.4vw;
+            }
+    }
+}
+
+
+@media screen and (min-width: $break-desktop){    
+    .card-fonctionnement{
+        margin-left: calc(#{$marge-bordure-hor} - 10px); 
+        justify-content: center;
+
+        &__rowcontent{
+            padding-left: 0px;
+        }
+
+        & h3{
+            font-size: 1em;
+        }
     }
 }
