@@ -49,13 +49,19 @@
 /* Crop */
 .card-image{
     @include card;
+    position: relative;
     user-select: none;
-    text-decoration: none;
-    color: #000;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
     
+    &__container{
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: #000;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
     &__crop{
         width: 100%;
         height: 75%;
@@ -86,11 +92,6 @@
         align-items: center;
         padding: 12px;
         padding-right: 20px;
-
-        & i{
-            @include icon(#000, 22px);
-            margin-left: auto;
-        }
 
         & h4{
             margin-bottom: 3px;
