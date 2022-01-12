@@ -8,7 +8,7 @@ h2{
     opacity: 0;
     visibility: hidden;
 
-    animation: displayPage 400ms ease forwards 2s;
+    animation: displayPage 400ms ease forwards $spinner-duration;
 }
 
 .spinner{
@@ -22,7 +22,7 @@ h2{
     top: calc(50% - 50px);
     right: calc(50% - 50px);
     animation: spinnerRotation 1s linear infinite,
-    hideSpinner 400ms linear forwards 2s;
+    hideSpinner 400ms linear forwards $spinner-duration;
 }
 
 @keyframes spinnerRotation {
