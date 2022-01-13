@@ -600,8 +600,6 @@ h2 {
     animation-timing-function: linear; }
     .heart__fill-container:hover {
       animation-name: heartFill 200ms; }
-    .heart__fill-container:not(:hover) {
-      animation: heartEmpty 200ms; }
   .heart__fill {
     position: absolute;
     bottom: 0;

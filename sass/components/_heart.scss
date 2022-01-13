@@ -30,10 +30,6 @@
         &:hover{
             animation-name: heartFill $heart-speed;
         }
-
-        &:not(:hover){
-            animation: heartEmpty $heart-speed;
-        }
     }
 
     &__fill{
