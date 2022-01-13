@@ -24,5 +24,7 @@
 
     &:hover{
         cursor: pointer;
+        background: lighten-gradient($couleur-secondaire, $couleur-primaire, 5%);
+        box-shadow: 1px 4px 8px #a0a0a0;
     }
 }

@@ -105,6 +105,11 @@
         }
     }
 
+    &:hover{
+        background-color: lighten($couleur-primaire, 36%);
+        box-shadow: 1px 4px 6px #ccc;
+    }
+
     &:last-child{
         margin-bottom: 5px;
     }
@@ -251,13 +256,6 @@
 
         & h3{
             font-size: 1em;
-        }
-    }
-
-    .card-image{
-        &:hover{
-            background-color: lighten($couleur-primaire, 36%);
-            box-shadow: 1px 4px 6px #ccc;
         }
     }
 
