@@ -11,6 +11,11 @@
         cursor: pointer;
     }
 
+    &--menu{
+        bottom: 17px;
+        right: 3%;
+    }
+
     &__fill-container{
         position: absolute;
         bottom: 0;

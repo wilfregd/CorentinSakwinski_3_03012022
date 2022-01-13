@@ -74,7 +74,7 @@ h2 {
   height: 100%;
   opacity: 0;
   visibility: hidden;
-  animation: displayPage 400ms ease forwards 1ms; }
+  animation: displayPage 400ms ease forwards 2s; }
 
 .spinner {
   width: 100px;
@@ -86,7 +86,7 @@ h2 {
   position: fixed;
   top: calc(50% - 50px);
   right: calc(50% - 50px);
-  animation: spinnerRotation 1s linear infinite, hideSpinner 400ms linear forwards 1ms; }
+  animation: spinnerRotation 1s linear infinite, hideSpinner 400ms linear forwards 2s; }
 
 @keyframes spinnerRotation {
   0% {
@@ -186,6 +186,9 @@ h2 {
     height: 225px;
     margin-top: 20px;
     margin-bottom: 15px; } }
+/* ------------------------------ */
+/* ---------- DESKTOP ---------- */
+/* ------------------------------ */
 @media screen and (min-width: 1280px) {
   .explorer {
     font-size: .85em;
@@ -314,6 +317,15 @@ h2 {
 .card-menu {
   height: 60px; }
 
+/* ---------------------------------------- */
+/* ---------- TABLETTE + DESKTOP ---------- */
+/* ---------------------------------------- */
+@media screen and (min-width: 775px) {
+  .menu__card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; } }
 .btn {
   user-select: none;
   padding: 15px;
@@ -511,11 +523,20 @@ h2 {
     transform: rotate(-180deg); }
   100% {
     transform: rotate(0deg); } }
+/* ------------------------------ */
+/* ---------- TABLETTE ---------- */
+/* ------------------------------ */
 @media screen and (min-width: 775px) and (max-width: 1280px) {
   .card-fonctionnement {
     margin-left: calc(5% - 10px); }
     .card-fonctionnement h3 {
-      font-size: 1.4vw; } }
+      font-size: 1.4vw; }
+
+  .card-menu {
+    width: calc((100% - 40px) / 2); } }
+/* ------------------------------ */
+/* ---------- DESKTOP ---------- */
+/* ------------------------------ */
 @media screen and (min-width: 1280px) {
   .card-fonctionnement {
     margin-left: calc(5% - 10px);
@@ -523,7 +544,10 @@ h2 {
     .card-fonctionnement__rowcontent {
       padding-left: 0px; }
     .card-fonctionnement h3 {
-      font-size: 1em; } }
+      font-size: 1em; }
+
+  .card-menu {
+    width: calc((100% - 40px) / 3); } }
 .image-label {
   position: absolute;
   z-index: 2;
@@ -553,6 +577,9 @@ h2 {
   .heart:hover {
     color: #fff;
     cursor: pointer; }
+  .heart--menu {
+    bottom: 17px;
+    right: 3%; }
   .heart__fill-container {
     position: absolute;
     bottom: 0;

@@ -210,6 +210,12 @@
     }
 }
 
+/* ------------------------------ */
+
+/* ---------- TABLETTE ---------- */
+
+/* ------------------------------ */
+
 @media screen and (min-width: $break-tablette) and (max-width: $break-desktop){    
     .card-fonctionnement{
         margin-left: calc(#{$marge-bordure-hor} - 10px);         
@@ -218,8 +224,17 @@
                 font-size: 1.4vw;
             }
     }
+
+    .card-menu{
+        width: calc((100% - 40px) / 2);
+    }
 }
 
+/* ------------------------------ */
+
+/* ---------- DESKTOP ---------- */
+
+/* ------------------------------ */
 
 @media screen and (min-width: $break-desktop){    
     .card-fonctionnement{
@@ -233,5 +248,9 @@
         & h3{
             font-size: 1em;
         }
+    }
+
+    .card-menu{
+        width: calc((100% - 40px) / 3);
     }
 }
