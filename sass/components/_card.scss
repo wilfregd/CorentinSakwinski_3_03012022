@@ -181,6 +181,10 @@
         }
     }
 
+    &:hover{
+        cursor: pointer;
+    }
+
     &:hover > .card-menu__droite{
         flex-grow: 0.5;
     }
@@ -247,6 +251,13 @@
 
         & h3{
             font-size: 1em;
+        }
+    }
+
+    .card-image{
+        &:hover{
+            background-color: lighten($couleur-primaire, 36%);
+            box-shadow: 1px 4px 6px #ccc;
         }
     }
 

@@ -506,6 +506,8 @@ h2 {
       position: absolute;
       color: #fff;
       font-size: 1.2em; }
+  .card-menu:hover {
+    cursor: pointer; }
   .card-menu:hover > .card-menu__droite {
     flex-grow: 0.5; }
   .card-menu:hover > .card-menu__droite i {
@@ -545,6 +547,10 @@ h2 {
       padding-left: 0px; }
     .card-fonctionnement h3 {
       font-size: 1em; }
+
+  .card-image:hover {
+    background-color: #f4eefc;
+    box-shadow: 1px 4px 6px #ccc; }
 
   .card-menu {
     width: calc((100% - 40px) / 3); } }
