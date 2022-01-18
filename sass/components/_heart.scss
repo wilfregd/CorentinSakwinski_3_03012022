@@ -1,19 +1,31 @@
 .heart{
-    @include icon(#000, 22px);
     position: absolute;
-    bottom: 4%;
-    right: 3%;
+    width: 25px;
+    height: 25px;
+    bottom: 10%;
+    right: 5%;
 
-    transition: color calc(#{$heart-speed} * 2);
+    & i{
+        @include icon(#000, 25px);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: color calc(#{$heart-speed} * 4);
+    }
 
-    &:hover{
+    &:hover > i{
         color: #fff;
         cursor: pointer;
     }
 
     &--menu{
+
+        & i{
+            @include icon(#000, 26px);
+        }
+
         bottom: 17px;
-        right: 3%;
+        right: 8%;
     }
 
     &__fill-container{
@@ -26,9 +38,10 @@
 
         animation-fill-mode: forwards;
         animation-timing-function: linear;
+        animation-duration: $heart-speed;
 
         &:hover{
-            animation-name: heartFill $heart-speed;
+            animation-name: heartFill;
         }
     }
 
@@ -55,15 +68,5 @@
 
     100%{
         height: 100%;
-    }
-}
-
-@keyframes heartEmpty {
-    0%{
-        height: 100%;
-    }
-
-    100%{
-        height: 0%;
     }
 }

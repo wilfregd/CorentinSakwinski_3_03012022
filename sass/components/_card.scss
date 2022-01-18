@@ -132,7 +132,7 @@
         align-self: center;
 
         & h4{
-            font-size: 1em;
+            font-size: 1.125em;
             white-space: nowrap;
         }
 
@@ -141,13 +141,13 @@
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden;
-            font-size: 0.76em;
+            font-size: 0.95em;
             font-weight: 300;
         }
     }
 
     &__prix{
-        flex-grow: .2;
+        flex-grow: .325;
         width: 20px;
         height: 100%;
         margin-right: 10px;
@@ -180,9 +180,8 @@
         transition: all 500ms;
 
         & i{
+            @include icon(#fff, 1.35em);
             position: absolute;
-            color: #fff;
-            font-size: 1.2em;
         }
     }
 
@@ -191,7 +190,7 @@
     }
 
     &:hover > .card-menu__droite{
-        flex-grow: 0.5;
+        flex-grow: 0.7;
     }
 
     &:hover > .card-menu__droite i{

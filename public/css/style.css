@@ -279,7 +279,7 @@ h2 {
   width: 100%;
   padding: 40px 5%;
   text-transform: uppercase;
-  font-weight: 0;
+  font-weight: 1;
   font-size: 17px; }
   .menu__titre {
     user-select: none;
@@ -475,17 +475,17 @@ h2 {
     width: 50%;
     align-self: center; }
     .card-menu__gauche h4 {
-      font-size: 1em;
+      font-size: 1.125em;
       white-space: nowrap; }
     .card-menu__gauche p {
       margin-top: 3px;
       text-overflow: ellipsis;
       white-space: nowrap;
       overflow: hidden;
-      font-size: 0.76em;
+      font-size: 0.95em;
       font-weight: 300; }
   .card-menu__prix {
-    flex-grow: .2;
+    flex-grow: .325;
     width: 20px;
     height: 100%;
     margin-right: 10px;
@@ -511,13 +511,13 @@ h2 {
     justify-content: center;
     transition: all 500ms; }
     .card-menu__droite i {
-      position: absolute;
       color: #fff;
-      font-size: 1.2em; }
+      font-size: 1.35em;
+      position: absolute; }
   .card-menu:hover {
     cursor: pointer; }
   .card-menu:hover > .card-menu__droite {
-    flex-grow: 0.5; }
+    flex-grow: 0.7; }
   .card-menu:hover > .card-menu__droite i {
     animation: rotateCheckBoxIn linear 300ms; }
 
@@ -578,18 +578,27 @@ h2 {
     font-weight: 700; }
 
 .heart {
-  color: #000;
-  font-size: 22px;
   position: absolute;
-  bottom: 4%;
-  right: 3%;
-  transition: color calc(200ms * 2); }
-  .heart:hover {
+  width: 25px;
+  height: 25px;
+  bottom: 10%;
+  right: 5%; }
+  .heart i {
+    color: #000;
+    font-size: 25px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: color calc(200ms * 4); }
+  .heart:hover > i {
     color: #fff;
     cursor: pointer; }
   .heart--menu {
     bottom: 17px;
-    right: 3%; }
+    right: 8%; }
+    .heart--menu i {
+      color: #000;
+      font-size: 26px; }
   .heart__fill-container {
     position: absolute;
     bottom: 0;
@@ -598,9 +607,10 @@ h2 {
     height: 0%;
     overflow: hidden;
     animation-fill-mode: forwards;
-    animation-timing-function: linear; }
+    animation-timing-function: linear;
+    animation-duration: 200ms; }
     .heart__fill-container:hover {
-      animation-name: heartFill 200ms; }
+      animation-name: heartFill; }
   .heart__fill {
     position: absolute;
     bottom: 0;
@@ -618,10 +628,5 @@ h2 {
     height: 0%; }
   100% {
     height: 100%; } }
-@keyframes heartEmpty {
-  0% {
-    height: 100%; }
-  100% {
-    height: 0%; } }
 
 /*# sourceMappingURL=style.css.map */
