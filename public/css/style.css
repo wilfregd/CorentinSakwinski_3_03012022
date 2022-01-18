@@ -475,14 +475,14 @@ h2 {
     width: 50%;
     align-self: center; }
     .card-menu__gauche h4 {
-      font-size: 1.125em;
+      font-size: 1.1em;
       white-space: nowrap; }
     .card-menu__gauche p {
       margin-top: 3px;
       text-overflow: ellipsis;
       white-space: nowrap;
       overflow: hidden;
-      font-size: 0.95em;
+      font-size: 0.75em;
       font-weight: 300; }
   .card-menu__prix {
     flex-grow: .325;
