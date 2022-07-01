@@ -3,6 +3,9 @@ Projet 3 - OpenClassrooms - Projet 3 : "Dynamisez une page web avec des animatio
 </h4>
 
 ---------------------
+<h4> Preview du site: </h4>
+<p>(Le site à été créé en mobile-first, et pensé pour les appareils mobiles)</p>
+<a href="https://wilfregd.github.io/OpenClassrooms-P3/">Aperçu du site</a>
 
 <h4>Palette:</h4>
 
