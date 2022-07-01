@@ -1,5 +1,5 @@
 <h4 align="center">
-Projet 3 - OpenClassrooms - Projet 3 : "Dynamisez une page web avec des animations CSS"
+Projet 3 - OpenClassrooms : "Dynamisez une page web avec des animations CSS"
 </h4>
 
 ---------------------
