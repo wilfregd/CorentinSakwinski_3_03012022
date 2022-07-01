@@ -1,6 +1,6 @@
 <p align="center">
   <a target="_blank" href="https://wilfregd.github.io/CorentinSakwinski_3_03012022/">
-  <img width=250 src="https://wilfregd.github.io/CorentinSakwinski_3_03012022/public/img/logo/ohmyfood2x_bg.png"/>
+  <img width=250 src="https://wilfregd.github.io/OpenClassrooms-P3/public/img/logo/ohmyfood@2x.svg"/>
   </a>
 </p>
 
@@ -14,9 +14,9 @@ Projet 3 - OpenClassrooms: "Dynamisez une page web avec des animations CSS"
 
 | Couleurs            | Hex                                                                   |
 | -----------------   | -----------------------------------------------------------------     |
-|Primaire             |  ![#9356DC](https://via.placeholder.com/30/9356DC?text=+) **#9356DC** |
-|Secondaire           |  ![#FF79DA](https://via.placeholder.com/30/FF79DA?text=+) **#FF79DA** |
-|Tertiaire            |  ![#99E2D0](https://via.placeholder.com/30/99E2D0?text=+) **#99E2D0** |
+|Primaire             |  **#9356DC** |
+|Secondaire           |  **#FF79DA** |
+|Tertiaire            |  **#99E2D0** |
 
 <h4>Polices:</h4>
 
